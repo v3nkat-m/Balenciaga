@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getStorage, ref, getDownloadURL } from 'firebase/storage';
+import { ref, getDownloadURL } from 'firebase/storage';
 import { storage } from '../firebase';
 import '../css/ImageUpload.css';
 
@@ -19,7 +19,7 @@ export default function ImageUpload({ path }) {
 
 	return (
 		<div className="ImageUpload-img">
-			<img src={imageUrl} alt="Header Image" />
+			<img src={imageUrl} alt="Header" />
 		</div>
 	);
 }

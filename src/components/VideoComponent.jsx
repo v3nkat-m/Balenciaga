@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getStorage, ref, getDownloadURL } from 'firebase/storage';
+import { ref, getDownloadURL } from 'firebase/storage';
 import { storage } from '../firebase';
 import '../css/VideoComponent.css';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';

@@ -16,7 +16,6 @@ export default function Header() {
 	const [isSubMenuVisible, setSubMenuVisible] = useState(null);
 	const [isDownMenuVisible, setDownMenuVisible] = useState(null);
 	const [isDownMenuExpanded, setDownMenuExpanded] = useState(false);
-	const [isHoverMenuVisible, setHoverMenuVisible] = useState(false);
 	const [isClicked, setClicked] = useState(false);
 
 	const handleClick = () => {
@@ -277,7 +276,8 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('NewArrivalDiscover')}
 					>
 						<div>DISCOVER</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'NewArrivalDiscover' ? (
+						{isDownMenuExpanded &&
+						isDownMenuVisible === 'NewArrivalDiscover' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -305,7 +305,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('WomenReadyToWear')}
 					>
 						<div>READY-TO-WEAR</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'WomenReadyToWear' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'WomenReadyToWear' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -320,7 +320,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('WomenShoes')}
 					>
 						<div>SHOES</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'WomenShoes' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'WomenShoes' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -335,7 +335,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('WomenBags')}
 					>
 						<div>BAGS</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'WomenBags' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'WomenBags' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -350,7 +350,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('WomenAccessories')}
 					>
 						<div>ACCESSORIES</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'WomenAccessories' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'WomenAccessories' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -379,7 +379,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('MenReadyToWear')}
 					>
 						<div>READY-TO-WEAR</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'MenReadyToWear' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'MenReadyToWear' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -394,7 +394,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('MenShoes')}
 					>
 						<div>SHOES</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'MenShoes' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'MenShoes' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -409,7 +409,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('MenBags')}
 					>
 						<div>BAGS</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'MenBags' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'MenBags' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -424,7 +424,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('MenAccessories')}
 					>
 						<div>ACCESSORIES</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'MenAccessories' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'MenAccessories' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -478,7 +478,7 @@ export default function Header() {
 					>
 						<div>SPECIAL PROJECTS</div>
 						{isDownMenuExpanded &&
-						isDownMenuVisible == 'ExploreSpecialProjects' ? (
+						isDownMenuVisible === 'ExploreSpecialProjects' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -493,7 +493,7 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('ExploreHeritage')}
 					>
 						<div>HERITAGE</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'ExploreHeritage' ? (
+						{isDownMenuExpanded && isDownMenuVisible === 'ExploreHeritage' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -508,7 +508,8 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('ExploreCollections')}
 					>
 						<div>COLLECTIONS</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'ExploreCollections' ? (
+						{isDownMenuExpanded &&
+						isDownMenuVisible === 'ExploreCollections' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -523,7 +524,8 @@ export default function Header() {
 						onClick={() => handleDownMenuClick('ExploreCommitments')}
 					>
 						<div>OUR COMMITMENTS</div>
-						{isDownMenuExpanded && isDownMenuVisible == 'ExploreCommitments' ? (
+						{isDownMenuExpanded &&
+						isDownMenuVisible === 'ExploreCommitments' ? (
 							<ExpandLessIcon
 								style={{ color: 'rgb(70, 70, 70)', fontSize: '3rem' }}
 							/>
@@ -536,7 +538,7 @@ export default function Header() {
 				</div>
 			)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'NewArrival' &&
+				isSubMenuVisible === 'NewArrival' &&
 				isDownMenuVisible === 'NewArrivalDiscover' && (
 					<div className="Downmenu-container">
 						<div>Fall 23 Women</div>
@@ -549,7 +551,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Women' &&
+				isSubMenuVisible === 'Women' &&
 				isDownMenuVisible === 'WomenReadyToWear' && (
 					<div className="Downmenu-container w1">
 						<div>Jackets</div>
@@ -562,7 +564,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Women' &&
+				isSubMenuVisible === 'Women' &&
 				isDownMenuVisible === 'WomenShoes' && (
 					<div className="Downmenu-container w2">
 						<div>Sneakers</div>
@@ -575,7 +577,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Women' &&
+				isSubMenuVisible === 'Women' &&
 				isDownMenuVisible === 'WomenBags' && (
 					<div className="Downmenu-container w3">
 						<div>Hand Bags</div>
@@ -588,7 +590,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Women' &&
+				isSubMenuVisible === 'Women' &&
 				isDownMenuVisible === 'WomenAccessories' && (
 					<div className="Downmenu-container w4">
 						<div>Sunglasses</div>
@@ -601,7 +603,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Men' &&
+				isSubMenuVisible === 'Men' &&
 				isDownMenuVisible === 'MenReadyToWear' && (
 					<div className="Downmenu-container w1">
 						<div>Jackets</div>
@@ -614,7 +616,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Men' &&
+				isSubMenuVisible === 'Men' &&
 				isDownMenuVisible === 'MenShoes' && (
 					<div className="Downmenu-container w2">
 						<div>Sneakers</div>
@@ -627,7 +629,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Men' &&
+				isSubMenuVisible === 'Men' &&
 				isDownMenuVisible === 'MenBags' && (
 					<div className="Downmenu-container w3">
 						<div>Hand Bags</div>
@@ -640,7 +642,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Men' &&
+				isSubMenuVisible === 'Men' &&
 				isDownMenuVisible === 'MenAccessories' && (
 					<div className="Downmenu-container w4">
 						<div>Sunglasses</div>
@@ -653,7 +655,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Explore' &&
+				isSubMenuVisible === 'Explore' &&
 				isDownMenuVisible === 'ExploreSpecialProjects' && (
 					<div className="Downmenu-container w1">
 						<div>Fall 23 Campaign</div>
@@ -666,7 +668,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Explore' &&
+				isSubMenuVisible === 'Explore' &&
 				isDownMenuVisible === 'ExploreHeritage' && (
 					<div className="Downmenu-container w2">
 						<div>Maison</div>
@@ -675,7 +677,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Explore' &&
+				isSubMenuVisible === 'Explore' &&
 				isDownMenuVisible === 'ExploreCollections' && (
 					<div className="Downmenu-container w3">
 						<div>Spring 24</div>
@@ -688,7 +690,7 @@ export default function Header() {
 					</div>
 				)}
 			{isMenuVisible &&
-				isSubMenuVisible == 'Explore' &&
+				isSubMenuVisible === 'Explore' &&
 				isDownMenuVisible === 'ExploreCommitments' && (
 					<div className="Downmenu-container w4">
 						<div>National Children's Alliance</div>

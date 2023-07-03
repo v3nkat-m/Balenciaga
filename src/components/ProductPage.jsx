@@ -43,7 +43,7 @@ export default function ProductPage() {
 			<Header />
 			<Search />
 			<div className="productpage-grid">
-				<img src={product.downloadURL} alt="Product Image" />
+				<img src={product.downloadURL} alt="Product" />
 				<div className="productpage-border">
 					<div className="productpage-flex">
 						<h1>{product.heading}</h1>

@@ -72,7 +72,7 @@ const Products = ({ category }) => {
 					>
 						<img
 							src={product.downloadURL}
-							alt="Product Image"
+							alt="Product"
 							className="Product-img"
 						/>
 						<h2>{product.heading}</h2>
