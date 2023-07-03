@@ -1,0 +1,11 @@
+.Search-wrapper {
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	gap: 1rem;
+}
+
+.Search-border-wrapper {
+	border-bottom: 1px solid black;
+}

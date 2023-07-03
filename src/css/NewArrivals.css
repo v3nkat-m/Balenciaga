@@ -1,0 +1,9 @@
+.NewArrivals {
+	display: flex;
+	font-size: 1.5rem;
+	gap: 3rem;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px black solid;
+}

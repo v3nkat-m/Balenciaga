@@ -1,0 +1,71 @@
+.Product-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	padding: 20px 0;
+}
+
+.Product-flex {
+	outline: 1px solid black;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	text-decoration: none;
+	color: black;
+}
+
+.Product-flex :hover {
+	text-decoration: underline;
+}
+
+.Product-flex :last-child :first-child {
+	margin-top: 1px;
+}
+.Product-grid--four {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.Product-grid--four > .Product-flex > img {
+	width: 200px;
+}
+
+.Product-grid--four > .Product-flex {
+	outline: 1px solid black;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+
+.Product-img {
+	width: 400px;
+}
+
+.toggleButton {
+	background-color: white;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+.Product-header-flex {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	justify-content: space-between;
+	padding: 0px 10px;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.Product-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.Product-img {
+		width: 600px;
+	}
+	.Product-grid--four {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

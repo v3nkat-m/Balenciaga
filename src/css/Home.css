@@ -1,0 +1,64 @@
+.home-margin {
+	margin: 0;
+}
+
+.HomeImgContainer1,
+.HomeImgContainer2,
+.HomeImgContainer3,
+.HomeImgContainer4 {
+	position: relative;
+}
+
+.img-title-flex1,
+.img-title-flex2,
+.img-title-flex3,
+.img-title-flex4 {
+	position: absolute;
+	top: 87%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	color: white;
+}
+
+.img-title-flex1,
+.img-title-flex3 {
+	color: black;
+}
+
+.img-title1,
+.img-title2,
+.img-title3,
+.img-title4 {
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.img-btn {
+	border-radius: 5px;
+	padding: 5px 8px;
+	color: black;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.img-btn::before {
+	content: '';
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: top 0.3s ease;
+	pointer-events: none;
+}
+
+.img-btn:hover::before {
+	top: 0;
+}

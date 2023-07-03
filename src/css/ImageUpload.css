@@ -1,0 +1,17 @@
+.ImageUpload-img > img {
+	width: 100%;
+	height: 470px;
+	object-fit: cover;
+}
+
+.ImageUpload-img {
+	margin-bottom: -5px;
+}
+
+@media (min-width: 768px) {
+	.ImageUpload-img > img {
+		width: 100%;
+		height: 600px;
+		object-fit: cover;
+	}
+}
