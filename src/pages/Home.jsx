@@ -11,11 +11,6 @@ import { Link } from 'react-router-dom';
 export default function Home() {
 	const [screenSize, setScreenSize] = useState('');
 	const [loading, setLoading] = useState(true);
-	const [imagesLoaded, setImagesLoaded] = useState(false);
-
-	const handleImageLoad = () => {
-		setImagesLoaded(true);
-	};
 
 	setTimeout(() => {
 		setLoading(false);
