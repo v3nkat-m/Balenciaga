@@ -17,7 +17,7 @@
 }
 
 .productpage-grid > img {
-	width: 450px;
+	width: 380px;
 }
 
 .productpage-flex > button {
@@ -27,7 +27,7 @@
 	cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 870px) {
 	.productpage-grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);

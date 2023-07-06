@@ -38,7 +38,7 @@
 }
 
 .Product-img {
-	width: 400px;
+	max-width: 170px;
 }
 
 .toggleButton {
@@ -58,7 +58,12 @@
 	text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 628px) {
+	.Product-img {
+		min-width: 280px;
+	}
+}
+@media (min-width: 1028px) {
 	.Product-grid {
 		grid-template-columns: repeat(2, 1fr);
 	}

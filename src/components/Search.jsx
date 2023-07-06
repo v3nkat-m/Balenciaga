@@ -11,7 +11,8 @@ const SearchInput = styled(InputBase)({
 });
 
 export default function Search() {
-	const [setInputVisible] = useState(false);
+	const [inputVisible, setInputVisible] = useState(false);
+
 	const [searchTerm, setSearchTerm] = useState('');
 	const handleChange = (event) => {
 		setSearchTerm(event.target.value);

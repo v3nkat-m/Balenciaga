@@ -10,6 +10,16 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
 	const [screenSize, setScreenSize] = useState('');
+	const [loading, setLoading] = useState(true);
+	const [imagesLoaded, setImagesLoaded] = useState(false);
+
+	const handleImageLoad = () => {
+		setImagesLoaded(true);
+	};
+
+	setTimeout(() => {
+		setLoading(false);
+	}, 2000);
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -28,6 +38,10 @@ export default function Home() {
 			window.removeEventListener('resize', handleResize);
 		};
 	}, []);
+
+	if (loading) {
+		return <div>Loading...</div>;
+	}
 
 	const imagePathForMen =
 		screenSize === 'large'
@@ -52,7 +66,7 @@ export default function Home() {
 					}
 				/>
 				<div className="img-title-flex1">
-					<div className="img-title1">LE CAGOLE BAG</div>
+					<div className="img-title1">HANDBAGS</div>
 					<Link to={`/bags`}>
 						<button className="img-btn">FOR WOMEN</button>
 					</Link>
