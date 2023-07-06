@@ -38,7 +38,7 @@
 }
 
 .Product-img {
-	max-width: 170px;
+	max-width: 150px;
 }
 
 .toggleButton {
@@ -60,7 +60,7 @@
 
 @media (min-width: 628px) {
 	.Product-img {
-		min-width: 280px;
+		max-width: 250px;
 	}
 }
 @media (min-width: 1028px) {
